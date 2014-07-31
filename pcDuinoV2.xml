@@ -12,7 +12,10 @@
   <remote name="mozillaorg"
       fetch="https://git.mozilla.org/releases" />
   <remote name="apitrace" fetch="git://github.com/apitrace/" />
-
+  <default revision="refs/tags/android-4.0.4_r2.1"
+           remote="caf"
+           sync-j="4" />
+           
   <!-- Gonk specific things and forks -->
   <project path="build" name="platform_build" remote="b2g" revision="master">
     <copyfile src="core/root.mk" dest="Makefile" />
